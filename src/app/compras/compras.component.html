@@ -1,0 +1,17 @@
+<div class = "container">
+<h1 class ="display-4"> O pão de cada day</h1>
+
+<p>&nbsp;</p>
+
+<ul class="compras">
+  <li *ngFor="let compra of compras">
+    <span class="badge">{{compra.id}}</span> {{compra.descricao}}
+  </li>
+</ul>
+
+<div>
+<input [(ngModel)]="compra.descricao" placeholder="Digite o que deseja comprar"/>
+<button (click) = "addCompra()">Adicionar</button>
+  
+</div>
+</div>
